@@ -1,0 +1,65 @@
+/* setup css global/.Start */
+
+body {
+  background-color: #22254b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Pages listing */
+.listing-product .item {
+  position: relative;
+  /* max-height: 500px; */
+  overflow: hidden;
+}
+.listing-product .item .box-image img {
+  object-fit: cover;
+  max-height: 500px;
+  width: 100%;
+}
+.listing-product .box-content {
+  background-color: #373b69;
+  padding: 10px; /*10px 10px 10px 10px*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.listing-product .box-content .title-film {
+  width: 80%;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 22px;
+  margin-right: 5px;
+}
+.listing-product .rating {
+  width: 20%;
+  text-align: center;
+  color: yellow;
+  padding: 5px;
+  border-radius: 5px; /* Bo vien*/
+  background-color: #22254b;
+}
+.listing-product .box-description {
+  position: absolute;
+  background-color: #fff;
+  transition: transform .3s;
+  transform: translateY(101%);
+  bottom: 0;
+}
+.listing-product .item:hover .box-description {
+  /* bottom: 0; */
+  transform: translateY(0%);
+  transition: .3s;
+}
+.box-description h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.box-description p {
+  font-size: 16px;
+  line-height: 1.6;
+}
