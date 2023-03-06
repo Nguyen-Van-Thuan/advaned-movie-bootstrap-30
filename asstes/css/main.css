@@ -47,11 +47,10 @@ body {
   position: absolute;
   background-color: #fff;
   transition: transform .3s;
-  transform: translateY(101%);
+  /* transform: translateY(101%); */
   bottom: 0;
 }
-.listing-product .item:hover .box-description {
-  /* bottom: 0; */
+/* .listing-product .item:hover .box-description {
   transform: translateY(0%);
   transition: .3s;
 }
@@ -62,4 +61,4 @@ body {
 .box-description p {
   font-size: 16px;
   line-height: 1.6;
-}
+} */
