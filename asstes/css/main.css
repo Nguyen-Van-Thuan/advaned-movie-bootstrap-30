@@ -11,10 +11,13 @@ body {
 
 
 /* Pages listing */
+.listing-product {
+  margin-top: 50px;
+}
 .listing-product .item {
   position: relative;
-  /* max-height: 500px; */
   overflow: hidden;
+  margin-bottom: 25px;
 }
 .listing-product .item .box-image img {
   object-fit: cover;
@@ -43,14 +46,16 @@ body {
   border-radius: 5px; /* Bo vien*/
   background-color: #22254b;
 }
+
 .listing-product .box-description {
+  padding: 30px;
   position: absolute;
   background-color: #fff;
   transition: transform .3s;
-  /* transform: translateY(101%); */
+  transform: translateY(101%);
   bottom: 0;
 }
-/* .listing-product .item:hover .box-description {
+.listing-product .item:hover .box-description {
   transform: translateY(0%);
   transition: .3s;
 }
@@ -61,4 +66,34 @@ body {
 .box-description p {
   font-size: 16px;
   line-height: 1.6;
-} */
+}
+
+.listing-product .box-description p {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.box-content .good {
+  color: green;
+}
+.box-content .normal {
+  color: orange;
+}
+.box-content .bad {
+  color: red;
+}
+
+/* --Form Search./Start-- */
+.wrap-form {
+  background-color: #373B69;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.wrap-form input {
+  border-radius: 50px;
+  background-color: transparent;
+  border: 1px solid #22254b;
+  padding: 12px 25px;
+  color: #fff;
+}
